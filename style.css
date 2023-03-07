@@ -1,0 +1,42 @@
+#game{
+    width: 700px;
+    height: 700px;
+    border-bottom: 2px solid black;
+    margin: auto;
+}
+
+#character{
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 520px;
+}
+
+@keyframes jump {
+    0% {top: 520px;}
+    15% {top: 450px;}
+    30% {top: 380px;}
+    45% {top: 380px;}
+    70% {top: 450px;}
+    100% {top: 520px;}
+}
+
+.animate {
+    animation: jump 600ms linear;
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 577px;        
+    left: 400px;
+    animation: block 1s infinite linear;
+    margin-left: 120px;
+}
+
+@keyframes block {
+    0% {left: 500px}
+    100% {left: -140px}
+}
+
